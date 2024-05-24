@@ -11,6 +11,10 @@
     <link rel="icon" type="image/png" href="./favicon.png">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             display: flex;
             flex-direction: column;
@@ -20,10 +24,12 @@
             gap: 12px;
             font-family: inter;
             color: #202020;
+            margin: 0;
         }
 
         h1 {
             font-size: 4rem;
+            font-weight: 800;
         }
 
         button {
@@ -49,6 +55,25 @@
         footer p {
             text-align: center;
         }
+
+        .despedida {
+            display: flex;align-items: center;gap: 5px;justify-content: center;
+        }
+
+        .sol {
+            font-size: 24px;
+        }
+
+        .badge-message {
+            color: #6841b0;
+            padding: 10px 24px;
+            background: #684caf05;
+            border-radius: 23px;
+            font-size: 0.9em;
+            margin-top: 2rem;
+            font-weight: 600;
+            border: 1px solid #6841bf36;
+        }
     </style>
 </head>
 
@@ -72,8 +97,10 @@
     <footer>
         <p>He hecho muchas webs, se me da de maravilla, te lo juro.</p>
         <p>Me llamo <strong>Alex.</strong> ¿Me llamas o te llamo?</p>
-        <p>Un saludo, adiós!🙂 </p>
+        <p class="despedida">Un saludo, adiós! <span class="sol">🌞</span></p>
     </footer>
+
+    <p class="badge-message">Sólo respondo después del pago. !Espero tu llamada!</p>
 </body>
 
 </html>
