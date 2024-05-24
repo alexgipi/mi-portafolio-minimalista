@@ -27,6 +27,10 @@
             margin: 0;
         }
 
+        body.monospace {
+            font-family: monospace;
+        }
+
         h1 {
             font-size: 4rem;
             font-weight: 800;
@@ -74,6 +78,19 @@
             font-weight: 600;
             border: 1px solid #6841bf36;
         }
+
+        .monospace  button {
+            font-family: monospace;
+        }
+
+        button.small {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            background: #fff;
+            color: #5e5e5e;
+            border: 1px solid #c3c3c3;
+            font-family: monospace;
+        }
     </style>
 </head>
 
@@ -94,6 +111,12 @@
         <strong>Aquí no hay Dark Mode, OK? 🙏</strong>
     </p>
 
+    <div style="display: flex; flex-direction: column;">
+        <p><strong>Pero si que hay Monospace 😏</strong></p>
+        <button class="small" onclick="toggleMonospace()">Toggle Monospace</button>
+    </div>
+
+
     <footer>
         <p>He hecho muchas webs, se me da de maravilla, te lo juro.</p>
         <p>Me llamo <strong>Alex.</strong> ¿Me llamas o te llamo?</p>
@@ -102,5 +125,11 @@
 
     <p class="badge-message">Sólo respondo después del pago. !Espero tu llamada!</p>
 </body>
+
+<script>
+    function toggleMonospace() {
+        document.body.classList.toggle('monospace');
+    }
+</script>
 
 </html>
